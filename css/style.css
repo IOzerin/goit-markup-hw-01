@@ -1,11 +1,36 @@
+:root {
+  /* background */
+  --c-dark: #2f303a;
+  --c-grey: #f5f4fa;
+  --c-light: #ffffff;
+  --c-accent: #2196f3;
+
+  /* text */
+  --txt-c-dark: #212121;
+  --txt-c-grey: #757575;
+  --txt-c-grey-light: rgba(255, 255, 255, 0.6);
+  --txt-c-accent: var(--c-accent);
+  --txt-c-light: var(--c-light);
+
+  /* font */
+  --font-main: "Roboto", sans-serif;
+  --font-logo: "Raleway", sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  margin: 0;
+}
+
 .logo {
-  font-family: Raleway;
+  font-family: var(--font-logo);
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
+  margin: 0;
 }
 
 .accent {
-  color: #2196f3;
+  color: var(--txt-c-accent);
 }
